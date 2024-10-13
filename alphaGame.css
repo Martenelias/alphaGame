@@ -1,0 +1,168 @@
+:root {
+  --BLACK: rgb(32, 32, 32);
+}
+
+body {
+  background-color: #cecece;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--BLACK);
+  box-shadow: 3px 3px 3px gray;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  margin-top: 10px;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+canvas {
+  margin-left: 200px;
+  cursor: crosshair;
+  background-color: whitesmoke;
+  box-shadow: 3px 3px 3px gray;
+}
+
+.scoreboard {
+  margin-right: 200px;
+  height: 540px;
+  width: 20%;
+  box-shadow: 3px 3px 3px gray;
+}
+
+.buttons {
+  margin-top: 10%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons .button {
+  width: 40%;
+  height: 50%;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px gray;
+  background-color: whitesmoke;
+}
+
+.buttons .button:hover {
+  cursor: pointer;
+  background-color: rgb(197, 196, 196);
+}
+
+.details {
+  margin-top: 5%;
+  height: 15%;
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  border-top: 1px solid var(--BLACK);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+  background-color: var(--BLACK);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.959);
+  z-index: 2;
+}
+
+.screenContainer {
+  border: 3px solid var(--BLACK);
+  background-color: #cecece;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+}
+
+h4 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  background-color: var(--BLACK);
+  color: white;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 20px 50px;
+  text-align: center;
+}
+
+.continue {
+  margin-top: 5%;
+  margin-left: 35%;
+  width: 30%;
+  height: 10%;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px gray;
+  background-color: whitesmoke;
+}
+
+.continue:hover {
+  cursor: pointer;
+  background-color: rgb(197, 196, 196);
+}

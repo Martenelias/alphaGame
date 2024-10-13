@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="utf-8">
+    <title>Tähestikumäng</title>
+    <link rel="stylesheet" href="alphaGame.css">
+</head>
+<body>
+  <nav>
+    <h1>Tähestikumäng</h1>
+  </nav>
+  <div class="screen" id="screen">
+    <div class="screenContainer">
+      <h4>Tähestikumäng</h4>
+      <h2>Tähestikumäng on kiirust ja täpsust nõudev mäng. Tuleb tähestikulises järjekorras pallidele klikkides ala tühjaks kõmmutada. Mängu saab käivitada 'Alusta' nupust. Mängus loetakse aega, valesi klikke ehk valet palli vajutades, mööda läinud klikke ehk pallidest mööda vajutades. Edu mängimisel !!</h2>
+      <input type="button" class="continue" name="continue" id="continue" value="Mängima!">
+    </div>
+  </div>
+  <section class="container">
+    <canvas id="canvas" width="960" height="540">
+      Kahjuks Teie brauser ei toeta HTML5 canvas elementi!
+    </canvas>
+    <div class="scoreboard">
+      <div class="buttons">
+        <input type="button" name="startGame" class="button" id="startGame" value="Alusta">
+        <input type="button" name="restartGame" class="button" id="restartGame" value="Uus mäng">
+      </div>
+      <div class="details">
+        <p>Aeg: </p>
+        <p id="time"></p>
+      </div>
+      <div class="details">
+        <p>Valed klikid: </p>
+        <p id="wrongClicks"></p>
+      </div>
+      <div class="details">
+        <p>Mööda klikid: </p>
+        <p id="missedClicks"></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Marten Elias &copy;</p>
+  </footer>
+</body>
+<script src="app.js" defer></script>
+</html>
